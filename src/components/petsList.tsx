@@ -42,7 +42,7 @@ export const PetsList = () => {
     <>
       {loading && <p>Loading data...</p>}
       {error && <p>{error}</p>}
-      {!(loading || error) && people.length > 0 && renderPetsByType("Cat")}
+      {!(loading || error) && people?.length > 0 && renderPetsByType("Cat")}
     </>
   );
 }
