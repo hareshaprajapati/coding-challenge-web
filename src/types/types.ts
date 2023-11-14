@@ -1,5 +1,5 @@
 export type PetType = "Cat" | "Dog" | "Fish";
-export type Gender = "Male" | "Female";
+type Gender = "Male" | "Female";
 
 export interface Pet {
   name: string;
