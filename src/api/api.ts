@@ -1,6 +1,7 @@
 import { ApiUrls } from "../types/constants";
+import { Person } from "../types/types";
 
-export const fetchPeople = async () => {
+export const fetchPeople = async (): Promise<Person[]> => {
   try {
     const response = await fetch(ApiUrls.PEOPLE);
     if (!response.ok) {
