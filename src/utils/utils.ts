@@ -1,8 +1,5 @@
 import { Person, PetType, PetsByOwnerGender } from "../types/types";
 
-/**
- * It will return the sorted Pets grouped by owner's gender.
- */
 export const getSortedPetsGroupedByOwnerGender = (
   people: Person[],
   petType: PetType
