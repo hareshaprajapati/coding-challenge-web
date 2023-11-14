@@ -1,8 +1,8 @@
-import { PEOPLE_URL } from "../types/constants";
+import { ApiUrls } from "../types/constants";
 
 export const fetchPeople = async () => {
   try {
-    const response = await fetch(PEOPLE_URL);
+    const response = await fetch(ApiUrls.PEOPLE);
     if (!response.ok) {
       throw new Error("Response is not ok.");
     }
